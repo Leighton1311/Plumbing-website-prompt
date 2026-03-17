@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ProFlow Plumbing</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: #1a1a1a;
+}
+
+/* HEADER */
+header {
+    background: white;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+}
+
+header h1 {
+    color: #0A2540;
+}
+
+header a {
+    text-decoration: none;
+    margin-left: 25px;
+    color: #333;
+    font-weight: 500;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(rgba(10,37,64,0.7), rgba(10,37,64,0.7)),
+    url('https://images.unsplash.com/photo-1600566752355-35792bedcfea') center/cover;
+    color: white;
+    padding: 140px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: #ff7a00;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 5px;
+    display: inline-block;
+}
+
+/* TRUST BAR */
+.trust {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background: #f5f7fa;
+    font-weight: 600;
+}
+
+/* SERVICES */
+.services {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* REVIEWS */
+.reviews {
+    background: #0A2540;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.review {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/* CTA */
+.cta {
+    padding: 80px 20px;
+    text-align: center;
+    background: #ff7a00;
+    color: white;
+}
+
+/* CONTACT */
+.contact {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* FOOTER */
+footer {
+    background: #111;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>ProFlow Plumbing</h1>
+    <div>
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </div>
+</header>
+
+<section class="hero">
+    <h2>Reliable Plumbing Done Right</h2>
+    <p>24/7 Emergency Service • Fast Response • Licensed Experts</p>
+    <a href="tel:1234567890" class="btn">Call Now</a>
+    <a href="#contact" class="btn">Get Free Quote</a>
+</section>
+
+<div class="trust">
+    <div>✔ Licensed & Insured</div>
+    <div>✔ 10+ Years Experience</div>
+    <div>✔ 5-Star Rated</div>
+</div>
+
+<section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+        <div class="card">Drain Cleaning</div>
+        <div class="card">Leak Detection</div>
+        <div class="card">Water Heater Repair</div>
+        <div class="card">Emergency Plumbing</div>
+    </div>
+</section>
+
+<section class="reviews">
+    <h2>Customer Reviews</h2>
+    <div class="review">⭐⭐⭐⭐⭐ “Best plumber I’ve ever used. Super fast and professional.”</div>
+    <div class="review">⭐⭐⭐⭐⭐ “Came out same day and fixed everything perfectly.”</div>
+</section>
+
+<section class="cta">
+    <h2>Need Help Fast?</h2>
+    <p>Call now and get your plumbing fixed today.</p>
+    <a href="tel:1234567890" class="btn">Call Now</a>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Request a Free Quote</h2>
+    <form>
+        <input type="text" placeholder="Name" required>
+        <input type="tel" placeholder="Phone" required>
+        <textarea placeholder="Describe your issue"></textarea>
+        <button class="btn">Submit</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 ProFlow Plumbing</p>
+    <p>Serving Your Area • Call 123-456-7890</p>
+</footer>
+
+</body>
+</html>
